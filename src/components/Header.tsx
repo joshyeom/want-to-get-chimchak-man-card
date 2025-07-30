@@ -24,12 +24,21 @@ export const Header = () => {
 
           {/* Navigation */}
           <div className="flex items-center gap-4">
-            <Button variant="ghost" size="sm" className="hidden md:flex">
+            <Button 
+              variant="ghost" 
+              size="sm" 
+              className="hidden md:flex"
+              onClick={() => window.open('https://github.com/joshyeom', '_blank')}
+            >
               <Heart className="w-4 h-4 mr-2" />
               만든이
             </Button>
             
-            <Button variant="ghost" size="sm">
+            <Button 
+              variant="ghost" 
+              size="sm"
+              onClick={() => window.open('https://github.com/joshyeom/want-to-get-chimchak-man-card', '_blank')}
+            >
               <Github className="w-4 h-4 mr-2" />
               Github
             </Button>
